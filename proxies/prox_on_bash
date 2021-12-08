@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Check the command line argument value exists or not
+if [ $1 != "" ]; then
+# Search all string based on date
+awk '{sub("#export http_proxy","export http_proxy")}1' $1 > /etc/apt/apt.conf.d/01 && mv /etc/apt/apt.conf.d/01 $1
+awk '{sub("#export https_proxy","export https_proxy")}1' $1 > /etc/apt/apt.conf.d/01 && mv /etc/apt/apt.conf.d/01 $1
+fi

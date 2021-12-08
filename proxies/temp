@@ -1,0 +1,1 @@
+Acquire::http::Proxy "http://10.1.1.4:3128";

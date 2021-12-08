@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+./prox_off_apt /etc/apt/apt.conf.d/01proxy
+./prox_off_bash /etc/bash.bashrc
